@@ -59,8 +59,21 @@
   <!-- Fixed header -->
   <div class="fixed top-0 left-0 right-0 z-50 hidden lg:block" style="background-color: rgba(245, 240, 230, 0.95); border-bottom: 1px solid var(--color-sepia);">
     <div class="flex items-center justify-between px-8 py-3 text-sm" style="color: var(--color-brown);">
-      <div>{formatYear(currentYear)}</div>
+      <div>
+        <a
+          href="https://madebynathan.com/"
+          target="_blank"
+          rel="noreferrer"
+          class="hover:opacity-80 transition-opacity"
+          style="color: var(--color-dark-brown);"
+        >
+          Made by Nathan
+        </a>
+      </div>
       <div class="flex items-center gap-8">
+        <div>
+          <span class="opacity-60">Year:</span> {formatYear(currentYear)}
+        </div>
         <div>
           <span class="opacity-60">{currentYear < -300_000 ? "Hominid" : "Human"} Pop.:</span> {formatPopulation(currentData.population)}
         </div>
@@ -73,21 +86,23 @@
         <div>
           <span class="opacity-60">Median Net Worth:</span> {formatCurrency(currentData.medianNetWorth)}
         </div>
-        <div>
-          <span class="opacity-60">Richest Person:</span>
-          {currentData.wealthiestPerson?.name ?? "N/A"}
-          {#if currentData.wealthiestPerson}
-            ({formatCurrency(currentData.wealthiestPerson.value)})
-          {/if}
-        </div>
-        <div>
-          <span class="opacity-60">Richest Region:</span>
-          {currentData.wealthiestEmpire?.name ?? "N/A"}
-        </div>
-        <div>
-          <span class="opacity-60">Top Company:</span>
-          {currentData.mostValuableCompany?.name ?? "N/A"}
-        </div>
+        {#if false}
+          <div>
+            <span class="opacity-60">Richest Person:</span>
+            {currentData.wealthiestPerson?.name ?? "N/A"}
+            {#if currentData.wealthiestPerson}
+              ({formatCurrency(currentData.wealthiestPerson.value)})
+            {/if}
+          </div>
+          <div>
+            <span class="opacity-60">Richest Region:</span>
+            {currentData.wealthiestEmpire?.name ?? "N/A"}
+          </div>
+          <div>
+            <span class="opacity-60">Top Company:</span>
+            {currentData.mostValuableCompany?.name ?? "N/A"}
+          </div>
+        {/if}
       </div>
     </div>
   </div>

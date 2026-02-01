@@ -326,7 +326,7 @@ export const events: TimelineEvent[] = [
     title: "First Stone Tools",
     image: img("first_stone_tools"),
     description:
-      `Roughly 3.3 million years ago, an early hominin strikes one stone against another and creates the first manufactured object in history. These Lomekwi tools predate Homo sapiens by millions of years. Here, that single tool anchors world value at <strong>${fmtShort(FIRST_TOOL_VALUE)}</strong> (${MODEL_DOLLAR_YEAR} USD), based on ~2 hours of labor at $${SHADOW_WAGE_RATE}/hour. Total world value at this point: <strong>${fmtShort(computed_3300000.totalWorldValue)}</strong>. The implied “wealthiest person” holds essentially all value (~${fmtPercent((tp_3300000.wealthiestPerson?.value ?? 0) / computed_3300000.totalWorldValue)}).`,
+      `Roughly 3.3 million years ago, an early hominin strikes one stone against another and creates the first manufactured object in history. These Lomekwi tools predate Homo sapiens by millions of years. Here, that single tool anchors world value at <strong>${fmtShort(FIRST_TOOL_VALUE)}</strong> (${MODEL_DOLLAR_YEAR} USD), based on ~2 hours of labor at $${SHADOW_WAGE_RATE}/hour. Total world value at this point: <strong>${fmtShort(computed_3300000.totalWorldValue)}</strong>. The wealthiest person holds essentially all value (~${fmtPercent((tp_3300000.wealthiestPerson?.value ?? 0) / computed_3300000.totalWorldValue)}).`,
     category: "tool",
     valueImpact: `World value: $0 → ${fmtShort(computed_3300000.totalWorldValue)}`,
     calculation: {
@@ -456,7 +456,7 @@ export const events: TimelineEvent[] = [
     title: "Invention of Coinage",
     image: img("invention_of_coinage"),
     description:
-      `In Lydia (modern-day Turkey), King Alyattes mints the first standardized coins from electrum, a natural gold-silver alloy. For the first time, value becomes portable, divisible, and widely recognizable. His son Croesus becomes a byword for extreme wealth. Total world value: <strong>${fmt(computed_600.totalWorldValue)}</strong>. The implied wealthiest individual holds about <strong>${fmtShort(tp_600.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_600.wealthiestPerson?.value ?? 0) / computed_600.totalWorldValue)} of world value).`,
+      `In Lydia (modern-day Turkey), King Alyattes mints the first standardized coins from electrum, a natural gold-silver alloy. For the first time, value becomes portable, divisible, and widely recognizable. His son Croesus becomes a byword for extreme wealth. Total world value: <strong>${fmt(computed_600.totalWorldValue)}</strong>. The wealthiest individual holds about <strong>${fmtShort(tp_600.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_600.wealthiestPerson?.value ?? 0) / computed_600.totalWorldValue)} of world value).`,
     category: "technology",
     valueImpact: `Total world value: ${fmtShort(computed_600.totalWorldValue)}`,
     calculation: {
@@ -469,7 +469,7 @@ export const events: TimelineEvent[] = [
     title: "The Great Pyramid",
     image: img("great_pyramid"),
     description:
-      `Pharaoh Khufu commands the construction of the Great Pyramid at Giza. The pyramid represents an enormous concentration of labor and resources for its era. Total world value: roughly <strong>${fmt(computed_3000.totalWorldValue)}</strong>. The implied wealth of Khufu is about <strong>${fmtShort(tp_3000.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_3000.wealthiestPerson?.value ?? 0) / computed_3000.totalWorldValue)} of world value).`,
+      `Pharaoh Khufu commands the construction of the Great Pyramid at Giza. The pyramid represents an enormous concentration of labor and resources for its era. Total world value: roughly <strong>${fmt(computed_3000.totalWorldValue)}</strong>. Khufu’s estimated wealth is about <strong>${fmtShort(tp_3000.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_3000.wealthiestPerson?.value ?? 0) / computed_3000.totalWorldValue)} of world value).`,
     category: "person",
     valueImpact: `Total world value: ${fmtShort(computed_3000.totalWorldValue)}`,
     calculation: {
@@ -482,7 +482,7 @@ export const events: TimelineEvent[] = [
     title: "Peak Roman Empire",
     image: img("peak_roman_empire"),
     description:
-      `Under Emperor Trajan, Rome reaches its maximum territorial extent and population. Historians often estimate the empire produced a substantial share of world output; this estimate assigns the Roman Empire about <strong>${fmtPercent((tp_117.wealthiestEmpire?.value ?? 0) / computed_117.totalWorldValue)}</strong> of world wealth (~${fmtShort(tp_117.wealthiestEmpire?.value ?? 0)}). Total world value: <strong>${fmt(computed_117.totalWorldValue)}</strong>. Augustus’s implied personal wealth is about <strong>${fmtShort(tp_117.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_117.wealthiestPerson?.value ?? 0) / computed_117.totalWorldValue)}).`,
+      `Under Emperor Trajan, Rome reaches its maximum territorial extent and population. Historians often estimate the empire produced a substantial share of world output; this estimate assigns the Roman Empire about <strong>${fmtPercent((tp_117.wealthiestEmpire?.value ?? 0) / computed_117.totalWorldValue)}</strong> of world wealth (~${fmtShort(tp_117.wealthiestEmpire?.value ?? 0)}). Total world value: <strong>${fmt(computed_117.totalWorldValue)}</strong>. Augustus’s estimated personal wealth is about <strong>${fmtShort(tp_117.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_117.wealthiestPerson?.value ?? 0) / computed_117.totalWorldValue)}).`,
     category: "empire",
     valueImpact: `Total world value: ${fmtShort(computed_117.totalWorldValue)}`,
     calculation: {

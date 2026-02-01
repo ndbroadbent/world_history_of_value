@@ -18,7 +18,7 @@
 /** Model currency year */
 export const MODEL_DOLLAR_YEAR = 2025;
 
-/** Shadow wage rate in 2025 USD - used for implied labor-equivalent values */
+/** Shadow wage rate in 2025 USD - used for labor-equivalent values */
 export const SHADOW_WAGE_RATE = 10; // $/hour
 
 /** GDP per-capita base year from Maddison Project Database (2011 international $) */
@@ -355,7 +355,7 @@ export function computeWorldValue(year: number): number {
 }
 
 /**
- * Get implied labor hours per person for any year
+ * Get labor hours per person for any year
  */
 export function getLaborHoursPerPerson(year: number): number {
   const population = getPopulation(year);
