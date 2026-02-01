@@ -1,0 +1,22 @@
+version: "3"
+
+tasks:
+  dev:
+    desc: Start development server
+    cmd: npm run dev
+
+  build:
+    desc: Build single-file output for Ghost embedding
+    cmd: npm run build
+
+  preview:
+    desc: Preview production build
+    cmd: npm run preview
+
+  clean:
+    desc: Clean build output
+    cmd: rm -rf dist
+
+  lint:
+    desc: Run type checking
+    cmd: npx svelte-check --tsconfig ./tsconfig.json

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-cream: #f5f0e6;
+  --color-sepia: #d4c5a9;
+  --color-brown: #5c4a32;
+  --color-dark-brown: #3d2e1f;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--color-cream);
+  color: var(--color-dark-brown);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Georgia, serif;
+}
