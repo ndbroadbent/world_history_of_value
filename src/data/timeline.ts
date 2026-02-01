@@ -10,7 +10,7 @@ import {
 
 const IMAGE_BASE = import.meta.env.DEV
   ? "/images/"
-  : "/2026/02/02/world-history-of-value/images/";
+  : "/2026/02/01/world-history-of-value/images/";
 
 const img = (name: string) => `${IMAGE_BASE}${name}.jpg`;
 
@@ -547,7 +547,7 @@ export const events: TimelineEvent[] = [
     title: "Getty: World's Richest",
     image: img("getty"),
     description:
-      `The Guinness Book of Records names J. Paul Getty the world's wealthiest private citizen. Total world value: <strong>${fmt(computed_1966.totalWorldValue)}</strong>. The implied top individual holds about <strong>${fmtShort(tp_1966.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_1966.wealthiestPerson?.value ?? 0) / computed_1966.totalWorldValue)} of world wealth).`,
+      `The Guinness Book of Records names J. Paul Getty the world's wealthiest private citizen. Total world value: <strong>${fmt(computed_1966.totalWorldValue)}</strong>. Getty’s estimated wealth is about <strong>${fmtShort(tp_1966.wealthiestPerson?.value ?? 0)}</strong> (~${fmtPercent((tp_1966.wealthiestPerson?.value ?? 0) / computed_1966.totalWorldValue)} of world wealth).`,
     category: "person",
     valueImpact: `Total world value: ${fmtShort(computed_1966.totalWorldValue)}`,
     calculation: {
